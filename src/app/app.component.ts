@@ -6,6 +6,7 @@ import {
   ElementRef,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-root',
@@ -17,17 +18,16 @@ export class AppComponent implements AfterViewInit {
 
   @ViewChild('preloader') preloader!: ElementRef;
   ngAfterViewInit() {
-    console.log(document.readyState);
-
-    //load event method
+    //load event trick
     window.addEventListener('load', () => {
-      console.log('load listener engaged');
-      this.preloader.nativeElement.style.display = 'none';
+      gsap.to('.preloader', { duration: 1, opacity: 0 }).then(() => {
+        this.preloader.nativeElement.classList.add('makeDisplayNone');
+      });
     });
 
-    //mehtod 2
-    this.document.addEventListener('readystatechange', () =>
-      console.log(document.readyState)
-    );
+    //method 2
+    // this.document.addEventListener('readystatechange', () =>
+    //   console.log(document.readyState)
+    // );
   }
 }

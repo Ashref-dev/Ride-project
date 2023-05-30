@@ -26,6 +26,30 @@ export class HeaderComponent implements OnInit {
   @ViewChild('hamburger', { static: true }) hamburger!: ElementRef;
 
   ngOnInit(): void {
+    //local storage user
+    const data = localStorage.getItem('currentUser');
+    this.currentUser = JSON.parse(data!);
+    console.log('current user', this.currentUser);
+
+    //check preloading end to animate elements
+    this.animateElements();
+
+    // this.pollDOM();
+    // this.pollDOM();
+  }
+  pollDOM() {
+    let disappear = this.document
+      .querySelector('.preloader')
+      ?.classList.contains('makeDisplayNone');
+
+    if (disappear) {
+      console.log('NOW!!!!!');
+    } else {
+      console.log('tryagain');
+      setTimeout(this.pollDOM, 500); // try again in 300 milliseconds
+    }
+  }
+  animateElements() {
     gsap.from(this.logoImg2.nativeElement, {
       duration: 0.7,
       opacity: 0,
@@ -60,11 +84,6 @@ export class HeaderComponent implements OnInit {
       y: -30,
       delay: 0.3,
     });
-
-    //local storage user
-    const data = localStorage.getItem('currentUser');
-    this.currentUser = JSON.parse(data!);
-    console.log('current user', this.currentUser);
   }
   clearAll() {
     localStorage.clear();
