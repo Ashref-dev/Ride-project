@@ -1,0 +1,123 @@
+body {
+  background-color: #eaf2ff;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3%;
+  font-size: 370%;
+}
+
+.back_post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 70%;
+  padding-top: 3%;
+}
+
+#pimage {
+  width: 30%;
+}
+
+.profile_contact_report {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_report {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  column-gap: 20%;
+}
+
+.button-hover-anim {
+  padding-bottom: 1.5%;
+  transition: all 1000ms;
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.5rem);
+    transition: all 250ms;
+  }
+  margin-top: 1.5%;
+}
+
+.gradient-button {
+  background: rgb(135, 67, 255);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff",endColorstr="#4136f1",GradientType=1);
+  // Box shadow
+  box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+  font-weight: 600;
+  font-size: 1.3vh;
+  color: white;
+  border: none;
+  margin: 0 auto;
+
+  padding: 1.7vh 5vh;
+  border-radius: 18px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.card_info {
+  text-align: left;
+}
+
+.card-parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  padding-top: 3%;
+  margin-right: 60%;
+  padding-bottom: 3%;
+}
+.card {
+  width: 70%;
+  border-radius: 30px;
+}
+
+.title_frequency {
+  display: flex;
+}
+
+#frq {
+  font-size: xx-small;
+}
+
+.trajectory {
+  text-align: center;
+}

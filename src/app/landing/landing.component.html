@@ -1,0 +1,209 @@
+
+<app-header></app-header>
+
+<!-- !main -->
+<main style="background-color: #eaf2ff">
+  <!-- wrapper start (mind the padding) -->
+  <div
+    #this
+    class="pt-4 pt-lg-1 text-center row"
+    style="
+      background-color: #eaf2ff;
+      margin-right: 0;
+      margin-left: 0;
+      overflow-x: hidden;
+    "
+  >
+    <div class="col-md-6 order-md-2" style="padding-left: 0; padding-right: 0">
+      <!-- anim of text behind girl on mobile -->
+      <app-about1></app-about1>
+      <!-- ! mobile img of girl -->
+      <img
+        id="girlPhotoMobile"
+        class="d-lg-none"
+        style="
+          position: absolute;
+          width: 37vh;
+          top: 12vh;
+          left: 50%;
+          transform: translate(-50%);
+        "
+        src="../assets/GirlPhoto.png"
+        alt=""
+      />
+      <!-- ! desktop img of girl -->
+      <div #girlPhoto>
+        <div class="d-none d-lg-flex">
+          <img
+            style="width: 75%; margin: 13% 2vw auto auto; z-index: 1"
+            src="../assets/GirlPhotoDesk.png"
+            alt=""
+          />
+          <!-- ride pattern on desktop behind girl -->
+          <img
+            class="position-absolute"
+            style="width: 52vw; top: 6vh; right: -5vw"
+            src="../assets/RideTextBGdesk.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- !the mobile version of the hero text -->
+    <div
+      class="col-md-6 order-md-1"
+      style="padding-left: 0 !important; padding-right: 0 !important"
+    >
+      <div class="d-lg-none">
+        <!-- corner image -->
+        <img
+          class="position-absolute"
+          style="width: 39vw; bottom: -4rem; left: -4rem; z-index: 1"
+          src="../assets/RepeatGrid.svg"
+          alt=""
+        />
+        <h1
+          class="position-relative display-5 big-text z-3"
+          id="bigText"
+          style="flex-shrink: 1"
+        >
+          <!--TODO: fix the text image  -->
+          <img
+            class="position-absolute"
+            style="
+              width: 22vh;
+              top: -5rem;
+              right: -6rem;
+              z-index: -1 !important;
+            "
+            src="../assets/RepeatGrid.svg"
+            alt=""
+          />
+
+          Take affordable <br />
+          rides, the fast <br />
+          way.
+        </h1>
+
+        <div class="mx-auto z-3" style="padding-top: 1vh">
+          <p class="lead sub-text" style="margin-bottom: 2vh" id="subText">
+            the best car app on the tunisian <br />
+            market today
+          </p>
+          <div
+            class="justify-content-sm-center"
+            id="gradientButton"
+            style="position: relative; z-index: 1050 !important"
+          >
+            <button type="button" class="gradient-button">Join now</button>
+          </div>
+        </div>
+      </div>
+      <!-- ! desktop version of hero-->
+      <div class="d-none d-lg-block" style="padding: 15vh 2vw 20vh 12vw">
+        <img
+          class="position-absolute"
+          style="margin-left: 7rem; margin-top: 6rem; width: 9vw"
+          src="../assets/repeatDesk1.png"
+          alt=""
+        />
+        <img
+          class="position-absolute"
+          style="left: -8rem; width: 16vw"
+          src="../assets/repeatDesk2.png"
+          alt=""
+        />
+        <h1
+          class="position-relative display-5 big-text z-3"
+          id="bigText"
+          style="text-align: left; font-size: 2rem; font-weight: 400"
+        >
+          No more taxis needed
+        </h1>
+        <h1 class="position-relative display-5 big-text-lg z-3" id="bigText">
+          Take affordable rides, the fast <br />
+          way.
+        </h1>
+
+        <div class="mx-auto z-3">
+          <p
+            class="lead mb-4 sub-text"
+            id="subText"
+            style="text-align: left; font-size: 1.2rem; padding: 1.2rem 0"
+          >
+            the best car app on the tunisian <br />
+            market today.
+          </p>
+        </div>
+
+        <div class="d-none d-lg-flex" id="gradientButton">
+          <button
+            type="button"
+            class="gradient-button-lg"
+            [routerLink]="['/postBrowser']"
+          >
+            Join now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      #scrollDown
+      style="position: absolute; bottom: 0vh; pointer-events: none"
+    >
+      <div
+        style="
+          position: absolute;
+          bottom: 0vh;
+          left: 50%;
+          transform: translate(-50%);
+          z-index: 0;
+        "
+      >
+        <iframe
+          class="d-none d-lg-block"
+          style="height: 8vh; flex-shrink: 1"
+          src="https://embed.lottiefiles.com/animation/142279"
+        ></iframe>
+      </div>
+      <div
+        style="
+          position: absolute;
+          bottom: 0vh;
+          left: 50%;
+          transform: translate(-50%);
+          z-index: 0;
+        "
+      >
+        <iframe
+          class="d-lg-none"
+          style="height: 6vh; flex-shrink: 1"
+          src="https://embed.lottiefiles.com/animation/142279"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- above me is the end of the wrapper -->
+
+  <div
+    class="d-lg-none"
+    style="background-color: #eaf2ff; width: 100%; height: 20vh"
+  ></div>
+</main>
+<!-- under the hero -->
+
+<app-partners></app-partners>
+
+<app-one-line-marquee></app-one-line-marquee>
+
+<app-three-section></app-three-section>
+
+<app-stunner></app-stunner>
+<app-physics-section></app-physics-section>
+<app-steps-section></app-steps-section>
+
+<app-about2></app-about2>
+
+<app-footer></app-footer>
+
+<!-- Tomatito - Cañailla -->

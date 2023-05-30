@@ -1,0 +1,89 @@
+.is--active {
+  opacity: 1 !important;
+}
+.grid-text_wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.grid-text_list {
+  height: 100vh;
+  display: flex;
+}
+.grid-text_item {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  align-self: end;
+  font-size: 15vw;
+  font-weight: 800;
+}
+//the grid
+.allGridWrap {
+  width: 100%;
+  height: 480vh;
+}
+.grid_wrapper {
+  width: 100%;
+  height: 120vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.text-gradient {
+  background: #4136f1;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #4136f1 0%,
+    #8743ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+//! card
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.324);
+  width: fit-content;
+  max-width: 100%;
+  @media screen and (min-width: 600px) {
+    max-width: 80%;
+  }
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  // backdrop-filter: blur(10px);
+  z-index: 10;
+
+  //https://fjolt.com/article/css-make-child-appear-behind-parent
+}
+.up-down-anim {
+  animation: MoveUpDown 5s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+/* Before */
+.autoprefixer-class {
+  justify-content: flex-end; /* or flex-start */
+}
+
+/* After */
+.autoprefixer-class {
+  justify-content: end; /* or start */
+}

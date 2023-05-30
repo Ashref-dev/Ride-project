@@ -1,0 +1,88 @@
+.text-gradient {
+  background: #4136f1;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #4136f1 0%,
+    #8743ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-button {
+  background: rgb(135, 67, 255);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff",endColorstr="#4136f1",GradientType=1);
+  // Box shadow
+  box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+  font-weight: 600;
+  font-size: 2vh;
+  color: white;
+  border: none;
+  margin: 0 auto;
+
+  padding: 1.7vh 5vh;
+  border-radius: 18px;
+  width: fit-content;
+  cursor: pointer;
+
+  transition: all 1000ms;
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.5rem);
+    transition: all 250ms;
+  }
+}
+.gradient-button-lg {
+  background: rgb(135, 67, 255);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff",endColorstr="#4136f1",GradientType=1);
+  // Box shadow
+  box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+  font-weight: 600;
+  font-size: medium;
+  color: white;
+  border: none;
+
+  padding: 1rem 2.6rem;
+  border-radius: 1.25rem;
+  width: fit-content;
+  cursor: pointer;
+
+  transition: all 1000ms;
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.5rem);
+    transition: all 250ms;
+  }
+}

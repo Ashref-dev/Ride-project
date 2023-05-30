@@ -1,0 +1,232 @@
+.bg {
+  display: flex;
+  background-color: #eaf2ff !important;
+
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  //Vars
+  :root {
+    --rad: 2rem;
+    --dur: 0.3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --color-brand: #57bd84;
+    --font-fam: "Poppins", sans-serif;
+    --height: 5rem;
+    --btn-width: 2px;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+    margin-right: 30%;
+  }
+
+  // Main styles
+  .title-top {
+    font-weight: 900;
+    font-size: 10vw;
+  }
+  form {
+    position: relative;
+    width: 31rem;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+    margin-right: 100% !important;
+  }
+
+  input,
+  input[type="search"] {
+    border-radius: 20px;
+    background-color: white !important;
+    position: relative;
+    width: 100%;
+    margin: 2vh 0;
+    padding: 0 1rem;
+
+    appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+  }
+
+  input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+
+    + button {
+      display: block;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .gradient-button {
+    background: rgb(135, 67, 255);
+    background: -moz-linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    background: linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff", endColorstr="#4136f1", GradientType=1);
+    // Box shadow
+    box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    margin: 0 auto;
+
+    padding: 1.1vh 4vh;
+    border-radius: 18px;
+
+    cursor: pointer;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    display: flex !important;
+    text-align: center !important;
+    margin-top: 10%;
+  }
+  .title-top {
+    font-weight: 900;
+    font-size: 5vw;
+  }
+  //Vars
+  :root {
+    --rad: 2rem;
+    --dur: 0.3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --color-brand: #57bd84;
+    --font-fam: "Poppins", sans-serif;
+    --height: 5rem;
+    --btn-width: 2px;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+    margin-right: 30%;
+  }
+
+  // Main styles
+  form {
+    position: relative;
+    width: 31rem;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+    margin-right: 100% !important;
+  }
+
+  input,
+  input[type="search"] {
+    border-radius: 20px;
+    background-color: white !important;
+    position: relative;
+    width: 100%;
+    margin: 2vh 0;
+    padding: 0 1rem;
+
+    appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+  }
+
+  input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+
+    + button {
+      display: block;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    padding: 2vh 3vw;
+    //shadow
+    box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.09);
+  }
+
+  .gradient-button {
+    background: rgb(135, 67, 255);
+    background: -moz-linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    background: linear-gradient(
+      270deg,
+      rgba(135, 67, 255, 1) 0%,
+      rgba(65, 54, 241, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8743ff", endColorstr="#4136f1", GradientType=1);
+    // Box shadow
+    box-shadow: 0px 15px 30px -3px rgba(20, 102, 204, 0.16);
+
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    margin: 0 auto;
+
+    padding: 1.1vh 4vh;
+    border-radius: 18px;
+
+    cursor: pointer;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+}

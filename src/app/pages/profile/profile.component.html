@@ -1,0 +1,151 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <h2 class="animate__animated animate__headShake"><b>Profile</b></h2>
+  <div class="back_post">
+    <div class="back button-hover-anim">
+      <button
+        class="gradient-button animate__animated animate__bounceIn"
+        [routerLink]="['/']"
+      >
+        <img
+          src="https://static-00.iconduck.com/assets.00/chevron-back-icon-291x512-k7wh0gtm.png"
+          alt=""
+          style="
+            width: 12px;
+            color: white;
+            filter: brightness(0) invert(1);
+            margin-right: 0.6rem;
+          "
+        />
+        Go back
+      </button>
+    </div>
+    <div class="post button-hover-anim">
+      <button
+        class="gradient-button animate__animated animate__bounceIn"
+        [routerLink]="['/addPost']"
+      >
+        Add Post
+      </button>
+    </div>
+  </div>
+  <div class="profile_contact_report">
+    <div class="profile">
+      <div class="profile_image">
+        <img
+          class="animate__animated animate__bounceIn"
+          alt="profile picture"
+          src="../../assets/profilepic.png"
+          id="pimage"
+        />
+      </div>
+      <div class="profile_info">
+        <p>Achref Ben Abdallah</p>
+        <p class="opacity">joined oct 2018</p>
+        <p class="opacity">4,4</p>
+      </div>
+    </div>
+
+    <div class="contact_report">
+      <div class="button-hover-anim">
+        <button class="btn gradient-button animate__animated animate__bounceIn">
+          Contact
+        </button>
+      </div>
+      <div class="button-hover-anim">
+        <button
+          type="button"
+          class="btn btn-outline-danger animate__animated animate__bounceIn"
+        >
+          Report user
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- cards -->
+
+  <!-- single card start -->
+  <div class="card-parent gap-4 pb-5">
+    <h3><b>Published routes</b></h3>
+    <!-- card start -->
+    <div class="card animate__animated animate__rubberBand">
+      <div class="card-body">
+        <div class="title_frequency">
+          <div class="title">
+            <h4 class="card_info">Mahdia Fare</h4>
+          </div>
+          <div class="frequency">
+            <p class="card_info" id="frq">ONE-TIME</p>
+          </div>
+        </div>
+        <p class="opacity card_info">10:00AM everyday</p>
+        <p class="trajectory">
+          Rue sahel ouardia <------> rue riadh borj cedria
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- card start -->
+    <div class="card animate__animated animate__rubberBand">
+      <div class="card-body">
+        <div class="title_frequency">
+          <div class="title">
+            <h4 class="card_info">Mahdia Fare</h4>
+          </div>
+          <div class="frequency">
+            <p class="card_info" id="frq">ONE-TIME</p>
+          </div>
+        </div>
+        <p class="opacity card_info">10:00AM everyday</p>
+        <p class="trajectory">
+          Rue sahel ouardia <------> rue riadh borj cedria
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- card start -->
+    <div class="card animate__animated animate__rubberBand">
+      <div class="card-body">
+        <div class="title_frequency">
+          <div class="title">
+            <h4 class="card_info">Mahdia Fare</h4>
+          </div>
+          <div class="frequency">
+            <p class="card_info" id="frq">ONE-TIME</p>
+          </div>
+        </div>
+        <p class="opacity card_info">10:00AM everyday</p>
+        <p class="trajectory">
+          Rue sahel ouardia <------> rue riadh borj cedria
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- card start -->
+    <div class="card animate__animated animate__rubberBand">
+      <div class="card-body">
+        <div class="title_frequency">
+          <div class="title">
+            <h4 class="card_info">Mahdia Fare</h4>
+          </div>
+          <div class="frequency">
+            <p class="card_info" id="frq">ONE-TIME</p>
+          </div>
+        </div>
+        <p class="opacity card_info">10:00AM everyday</p>
+        <p class="trajectory">
+          Rue sahel ouardia <------> rue riadh borj cedria
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+  </div>
+</body>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

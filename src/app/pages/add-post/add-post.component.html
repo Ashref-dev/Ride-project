@@ -1,0 +1,105 @@
+<div class="back">
+  <div class="container fluid">
+    <div class="card">
+      <img src="../../../assets/SL.png" class="logo" />
+      <div class="card-body">
+        <div class="card" id="c2">
+          <br />
+
+          <div class="card-title">
+            <h1>Add Post</h1>
+          </div>
+          <br />
+          <form (ngSubmit)="signSubmit()">
+            <div class="card-body">
+              <h2>Car informations</h2>
+              <label class="form-label">Matricul</label>
+              <input type="text" class="form-control" placeholder="matricul" />
+
+              <p>Select a car from the dropdown to view its details:</p>
+              <select class="form-control" id="car-select">
+                <option value="">--Select a car--</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+              </select>
+
+              <div class="form-group">
+                <label for="file">front image of your car:</label>
+                <input type="file" class="form-control" name="file" id="file" />
+              </div>
+
+              <button type="submit" class="btn btn-success" id="Upload">
+                Upload
+              </button>
+              <br />
+
+              <div class="form-group">
+                <label for="file">back image of your car:</label>
+                <input type="file" class="form-control" name="file" id="file" />
+              </div>
+
+              <button type="submit" class="btn btn-success" id="Upload">
+                Upload
+              </button>
+              <br />
+              <br />
+              <h2>Trajectory Informations</h2>
+              <label class="form-label">start location</label>
+              <input
+                [(ngModel)]="start"
+                type="text"
+                class="form-control"
+                name="start"
+              />
+              <label class="form-label">end location</label>
+              <input
+                [(ngModel)]="end"
+                type="text"
+                class="form-control"
+                name="end"
+              />
+              <h2>Carpool details</h2>
+              <label class="form-label">number of spots </label>
+              <input type="number" class="form-control" />
+              <label class="form-label">date of carpool </label>
+              <input type="date" class="form-control" />
+              <label class="form-label">price per person</label>
+              <input type="number" class="form-control" />
+              <br />
+              <div class="row">
+                <div class="col-5">
+                  <div class="d-grid gap-2">
+                    <button
+                      type="submit"
+                      class="btn btn-success"
+                      id="buttonlog"
+                    >
+                      submit
+                    </button>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+
+                <div class="col-5">
+                  <div class="d-grid gap-2">
+                    <button
+                      type="submit"
+                      class="btn btn-success"
+                      id="buttonlog"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

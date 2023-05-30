@@ -1,0 +1,52 @@
+<div class="back-ground col-lg-8 col-11">
+  <img
+    class="animate__animated animate__headShake"
+    src="../../assets/SL.png"
+    alt="ride"
+    id="logo"
+  />
+  <div class="wrapper">
+    <input
+      class="animate__animated animate__bounceIn"
+      type="image"
+      alt="submit"
+      src="../../assets/ProfileI.png"
+      id="imagesub"
+    />
+    <form (ngSubmit)="signSubmit()" class="animate__animated animate__fadeIn">
+      <label for="user">Username</label><br />
+      <input
+        type="text"
+        id="username"
+        [(ngModel)]="username"
+        name="username"
+        required
+      />
+      <label for="email">Email</label><br />
+      <input type="mail" id="email" [(ngModel)]="email" name="email" />
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+      />
+      <label for="retype">Confirm Password</label><br />
+      <input type="password" id="retype" /><br />
+      <label for="birthday">Pick your birthday</label>
+      <input
+        type="date"
+        id="birthday"
+        [(ngModel)]="birthday"
+        name="birthday"
+      /><br />
+      <button class="gradient-button animate__animated animate__bounceIn">
+        Sign up
+      </button>
+    </form>
+
+    <div class="member">
+      Already have an account? <a [routerLink]="['/login']">Sign in</a>
+    </div>
+  </div>
+</div>
