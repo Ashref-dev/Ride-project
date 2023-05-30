@@ -19,9 +19,9 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     console.log(document.readyState);
 
+    //load event method
     window.addEventListener('load', () => {
       console.log('load listener engaged');
-
       this.preloader.nativeElement.style.display = 'none';
     });
 
