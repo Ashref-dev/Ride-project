@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
   currentUser: any = '';
   @ViewChild('logoImg2', { static: true }) logoImg2!: ElementRef;
 
-  @ViewChild('navButton', { static: true }) navButton!: ElementRef;
   @ViewChild('list', { static: true }) list!: ElementRef;
 
   //mobile
@@ -32,23 +31,12 @@ export class HeaderComponent implements OnInit {
     console.log('current user', this.currentUser);
 
     //check preloading end to animate elements
-    this.animateElements();
 
-    // this.pollDOM();
-    // this.pollDOM();
+    window.addEventListener('load', () => {
+      this.animateElements();
+    });
   }
-  pollDOM() {
-    let disappear = this.document
-      .querySelector('.preloader')
-      ?.classList.contains('makeDisplayNone');
 
-    if (disappear) {
-      console.log('NOW!!!!!');
-    } else {
-      console.log('tryagain');
-      setTimeout(this.pollDOM, 500); // try again in 300 milliseconds
-    }
-  }
   animateElements() {
     gsap.from(this.logoImg2.nativeElement, {
       duration: 0.7,
@@ -56,7 +44,6 @@ export class HeaderComponent implements OnInit {
       y: -30,
       delay: 0.3,
     });
-
     gsap.from(this.list.nativeElement.childNodes, {
       duration: 0.5,
       opacity: 0,
@@ -65,12 +52,12 @@ export class HeaderComponent implements OnInit {
       delay: 0.5,
     });
 
-    // gsap.from(this.navButton.nativeElement, {
-    //   duration: 0.7,
-    //   opacity: 0,
-    //   y: -30,
-    //   delay: 1.7,
-    // });
+    gsap.from(this.document.querySelectorAll('.CTAbuttons'), {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      delay: 1.7,
+    });
     //mobile below
     gsap.from(this.logoImg.nativeElement, {
       duration: 0.7,

@@ -25,9 +25,6 @@ export class AppComponent implements AfterViewInit {
       });
     });
 
-    //method 2
-    // this.document.addEventListener('readystatechange', () =>
-    //   console.log(document.readyState)
-    // );
+    
   }
 }

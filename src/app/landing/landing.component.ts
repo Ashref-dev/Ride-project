@@ -25,7 +25,9 @@ export class LandingComponent implements OnInit {
   @ViewChild('scrollDown', { static: true }) scrollDown!: ElementRef;
 
   ngOnInit(): void {
-    this.initAnimations();
+    window.addEventListener('load', () => {
+      this.initAnimations();
+    });
   }
   initAnimations(): void {
     // mobile anim

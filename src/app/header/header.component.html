@@ -76,43 +76,46 @@
       <a [routerLink]="['/contact']" class="nav-link px-2 link-dark">Contact</a>
     </li>
   </ul>
-  <!-- no user logged in -->
-  <div *ngIf="currentUser == null" class="col-md-3 text-end" #navButton>
-    <a
-      [routerLink]="['/login']"
-      class="link-dark pe-3 pe-xl-4"
-      style="text-decoration: none"
-      >Log in</a
+  <div style="display: inline;" class="CTAbuttons">
+    <!-- no user logged in -->
+    <div *ngIf="currentUser == null" class="col-md-3 text-end d-inline">
+      <a
+        [routerLink]="['/login']"
+        class="link-dark pe-3 pe-xl-4"
+        style="text-decoration: none"
+        >Log in</a
+      >
+      <button
+        type="button"
+        [routerLink]="['/signup']"
+        class="gradient-button"
+        style="padding: 0.6em 2vw; font-size: 0.9em; border-radius: 13px"
+      >
+        Sign up
+      </button>
+    </div>
+    <!-- user logged in true -->
+    <div
+      *ngIf="currentUser"
+      class="col-md-3 text-end d-flex flex-row align-items-center"
     >
-    <button
-      type="button"
-      [routerLink]="['/signup']"
-      class="gradient-button"
-      style="padding: 0.6em 2vw; font-size: 0.9em; border-radius: 13px"
-    >
-      Sign up
-    </button>
-  </div>
-  <!-- user logged in true -->
-  <div
-    *ngIf="currentUser"
-    class="col-md-3 text-end d-flex flex-row align-items-center"
-    #navButton
-  >
-    <span class="link-dark pe-4" style="text-decoration: none; font-weight: 600"
-      >{{ currentUser[0]["username"] }}
-    </span>
-    <img
-      src="https://sonar.ftun5-1.fna.fbcdn.net/v/t39.30808-1/274480513_1179989572537674_7273953419814914029_n.jpg?stp=dst-jpg_p240x240&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_ohc=7hI4tan_jvMAX9K_68x&_nc_ad=z-m&_nc_cid=1360&_nc_ht=sonar.ftun5-1.fna&oh=00_AfCXlGfuzQmPUBmKl2XBGGZjq3kclhIVMlDQzocSWOj3ag&oe=645657B3"
-      [routerLink]="['/profile']"
-      style="width: 3.2rem; border-radius: 100%; border: 3px solid #8543ff"
-    />
-    <button
-      class="gradient-button"
-      style="padding: 0.5rem 1rem 0.5rem 1rem"
-      (click)="clearAll()"
-    >
-      Log out
-    </button>
+      <span
+        class="link-dark pe-4"
+        style="text-decoration: none; font-weight: 600"
+        >{{ currentUser[0]["username"] }}
+      </span>
+      <img
+        src="https://sonar.ftun5-1.fna.fbcdn.net/v/t39.30808-1/274480513_1179989572537674_7273953419814914029_n.jpg?stp=dst-jpg_p240x240&_nc_cat=108&ccb=1-7&_nc_sid=7206a8&_nc_ohc=7hI4tan_jvMAX9K_68x&_nc_ad=z-m&_nc_cid=1360&_nc_ht=sonar.ftun5-1.fna&oh=00_AfCXlGfuzQmPUBmKl2XBGGZjq3kclhIVMlDQzocSWOj3ag&oe=645657B3"
+        [routerLink]="['/profile']"
+        style="width: 3.2rem; border-radius: 100%; border: 3px solid #8543ff"
+      />
+      <button
+        class="gradient-button"
+        style="padding: 0.5rem 1rem 0.5rem 1rem"
+        (click)="clearAll()"
+      >
+        Log out
+      </button>
+    </div>
   </div>
 </header>
