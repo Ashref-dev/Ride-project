@@ -29,13 +29,25 @@
 </header>
 
 <!-- !Desktop header -->
+<!-- buffer  -->
+<div
+  style="
+    position: absolute;
+    background-color: #eaf2ff;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  "
+></div>
+<!-- end of buffer -->
 <header
   #header
-  class="d-none d-lg-flex justify-content-between"
+  class="d-none d-lg-flex"
   style="
     background-color: #eaf2ff71;
-    padding: 1rem 5vw 1rem 5vw;
-    margin: 0 3rem 0 3rem;
+    padding: 1rem 0 1rem 0;
+    margin: 0 4vw 0 4vw;
+    justify-content: space-around;
     border-radius: 25px;
     position: sticky;
     top: 2.5rem;
@@ -43,10 +55,7 @@
     z-index: 10;
   "
 >
-  <a
-    href="/"
-    class="d-flex align-items-center col-md-3 0 text-dark text-decoration-none"
-  >
+  <a href="/" class="d-flex align-items-center">
     <img
       #logoImg2
       class="img-fluid"
@@ -58,38 +67,42 @@
 
   <ul
     #list
-    class="nav col-12 col-md-auto mb-2 align-items-center justify-content-around mb-md-0 gap-3 gap-lg-4 gap-xl-5"
-    style="font-size: medium"
+    class="nav mb-2 align-items-center justify-content-between mb-md-0 gap-3 gap-lg-4 gap-xl-5"
+    style="font-size: small"
   >
     <li>
-      <a [routerLink]="['/']" class="nav-link px-2 link-dark">Home</a>
+      <a [routerLink]="['/']" class="nav-link px-2 link-dark fs-6">Home</a>
     </li>
     <li>
-      <a [routerLink]="['/postBrowser']" class="nav-link px-2 link-dark"
+      <a [routerLink]="['/postBrowser']" class="nav-link px-2 link-dark fs-6"
         >Posts</a
       >
     </li>
     <li>
-      <a [routerLink]="['/profile']" class="nav-link px-2 link-dark">Profile</a>
+      <a [routerLink]="['/profile']" class="nav-link px-2 link-dark fs-6"
+        >Profile</a
+      >
     </li>
     <li>
-      <a [routerLink]="['/contact']" class="nav-link px-2 link-dark">Contact</a>
+      <a [routerLink]="['/contact']" class="nav-link px-2 link-dark fs-6"
+        >Contact</a
+      >
     </li>
   </ul>
-  <div style="display: inline;" class="CTAbuttons">
+  <div class="CTAbuttons">
     <!-- no user logged in -->
-    <div *ngIf="currentUser == null" class="col-md-3 text-end d-inline">
+    <div *ngIf="currentUser == null" style="justify-self: end">
       <a
         [routerLink]="['/login']"
-        class="link-dark pe-3 pe-xl-4"
+        class="link-dark pe-3 pe-xl-4 fs-6"
         style="text-decoration: none"
         >Log in</a
       >
       <button
         type="button"
         [routerLink]="['/signup']"
-        class="gradient-button"
-        style="padding: 0.6em 2vw; font-size: 0.9em; border-radius: 13px"
+        class="gradient-button fs-6"
+        style="padding: 0.6em 2vw; border-radius: 14px"
       >
         Sign up
       </button>
