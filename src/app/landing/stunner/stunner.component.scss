@@ -11,16 +11,13 @@
 .wrapper {
   overflow: hidden;
   position: relative;
-  // border: 2px solid red;
-  translate: 0 -13rem;
-  padding-top: 5rem;
+  translate: 0 -15vh;
 }
 .headerAnim {
   display: inline-flex;
   font-size: 8vw;
   font-weight: 900;
   position: relative;
-
   margin: 0;
   line-height: 0.8;
 }

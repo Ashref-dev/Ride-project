@@ -25,8 +25,7 @@ export class StunnerComponent implements AfterViewInit {
         // trigger element - viewport
         start: 'top 94%',
         end: 'bottom 35%',
-
-        scrub: 0.5,
+        scrub: 0.7,
       },
     });
     gsap.from(this.document.querySelector('.splitmb')!.childNodes, {
@@ -51,10 +50,9 @@ export class StunnerComponent implements AfterViewInit {
         scrollTrigger: {
           trigger: triggerElement,
           // trigger element - viewport
-          start: 'top 13.5%',
+          start: 'top 18%',
           end: '40% top',
-          scrub: 0.8,
-         
+          scrub: 1,
         },
       });
       tl.to(targetElement, {

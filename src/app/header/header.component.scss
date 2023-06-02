@@ -77,3 +77,14 @@
     box-shadow: 0 0 50px 2px #9a63ff92, 0.45rem 0.45rem 28px #9e6aff9d;
   }
 }
+@media screen and (max-width: 1100px) {
+  .nav-link {
+    font-size: smaller !important;
+  }
+  div a.link-dark {
+    font-size: smaller !important;
+  }
+  div button.gradient-button{
+    font-size: smaller !important;
+  }
+}

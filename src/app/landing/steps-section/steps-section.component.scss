@@ -19,6 +19,7 @@
   font-size: 15vw;
   font-weight: 800;
 }
+
 //the grid
 .allGridWrap {
   width: 100%;
@@ -41,6 +42,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.glass-card-title {
+  font-size: 3.5vw;
+}
+.glass-card-sub {
+  font-size: 2.5vw;
 }
 //! card
 .glass-card {

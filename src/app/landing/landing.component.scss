@@ -73,8 +73,8 @@
   color: white;
   border: none;
 
-  padding: 1rem 2.6rem;
-  border-radius: 1.25rem;
+  padding: 1vw 2.6vw;
+  border-radius: 14px;
   width: fit-content;
   cursor: pointer;
 
@@ -85,6 +85,7 @@
     transition: all 250ms;
   }
 }
+
 .big-text-lg {
   font-weight: 800;
   font-size: 4vw;
