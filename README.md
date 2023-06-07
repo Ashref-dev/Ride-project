@@ -1,4 +1,4 @@
-# RIDE - Landing page for a ride sharing webapp, add loading lazy and eager !!!!!
+# RIDE - Landing page for a ride sharing webapp
 
 This repository contains the source code and assets for a landing page developed as an academic project.
 The landing page is built using Angular, Three.js, GSAP, and Bootstrap 5.
