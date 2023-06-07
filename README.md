@@ -5,7 +5,7 @@ The landing page is built using Angular, Three.js, GSAP, and Bootstrap 5.
 The logo design, UI/UX work (thanks figma) & development was all done from scratch with no templates, only following a lot of tutorials xD  
 
 You can see it for yourself at this link:
-https://ride-client.onrender.com/
+[ride-project.vercel.app](ride-project.vercel.app)
 
 ![Landing Page Preview](https://i.ibb.co/GsSDcnS/og.jpg)
 
@@ -21,12 +21,12 @@ To install and run the landing page, follow these steps:
 2. Install the dependencies using `npm install`.
 3. Build and serve the landing page using `ng serve --open`.
 
-or just visit: https://ride-client.onrender.com/
+or just visit: [ride-project.vercel.app](ride-project.vercel.app)
 
 
 ## Credits
 
-This project was developed by [M. Ashref Ben Abdallah](https://www.linkedin.com/in/mohamedashrefbna/) with collaboration of Haroun Malek Hammami & Aerij Ben Salah as part of an Academic project.
+This project was developed by [M. Ashref Ben Abdallah](https://www.linkedin.com/in/mohamedashrefbna/)
 
 We would like to acknowledge the following resources that were used in the development of this landing page:
 
