@@ -2,10 +2,10 @@
 
 This repository contains the source code and assets for a landing page developed as an academic project.
 The landing page is built using Angular, Three.js, GSAP, and Bootstrap 5.
-The logo design, UI/UX work (thanks figma) & development was all done from scratch with no templates, only following a lot of tutorials xD  
+The logo design, UI/UX work (thanks Figma) & development was all done from scratch with no templates, only following a lot of tutorials xD  
 
 You can see it for yourself at this link:
-[ride-project.vercel.app](ride-project.vercel.app)
+[ride-project.vercel.app](https://ride-project.vercel.app/)
 
 ![Landing Page Preview](https://i.ibb.co/GsSDcnS/og.jpg)
 
@@ -21,7 +21,7 @@ To install and run the landing page, follow these steps:
 2. Install the dependencies using `npm install`.
 3. Build and serve the landing page using `ng serve --open`.
 
-or just visit: [ride-project.vercel.app](ride-project.vercel.app)
+or just visit: [ride-project.vercel.app](https://ride-project.vercel.app/)
 
 
 ## Credits

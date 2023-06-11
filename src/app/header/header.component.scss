@@ -34,8 +34,7 @@
   &:hover,
   &:focus-visible {
     transform: translateY(-0.2rem);
-    transition: all 250ms;
-    box-shadow: 0 0 50px 2px #b791ffc2, 0.45rem 0.45rem 28px #b187ffdc;
+    transition: all 100ms;
   }
 }
 .gradient-button-lg {
@@ -84,7 +83,7 @@
   div a.link-dark {
     font-size: smaller !important;
   }
-  div button.gradient-button{
+  div button.gradient-button {
     font-size: smaller !important;
   }
 }
