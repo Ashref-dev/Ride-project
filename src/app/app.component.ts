@@ -5,7 +5,6 @@ import {
   ViewChild,
   ElementRef,
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
 import { gsap } from 'gsap';
 
 @Component({
@@ -14,7 +13,7 @@ import { gsap } from 'gsap';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor() {}
 
   @ViewChild('preloader') preloader!: ElementRef;
   ngAfterViewInit() {
@@ -24,7 +23,5 @@ export class AppComponent implements AfterViewInit {
         this.preloader.nativeElement.classList.add('makeDisplayNone');
       });
     });
-
-    
   }
 }
