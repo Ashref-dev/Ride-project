@@ -8,6 +8,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'postBrowser', component: PostBrowserComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'addPost', component: AddPostComponent },
+  //Wild Card Route for 404 request
+  { path: '**', pathMatch: 'full', component: NotFoundPageComponent },
 ];
 
 @NgModule({

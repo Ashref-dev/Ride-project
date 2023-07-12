@@ -24,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { TestimonialsComponent } from './landing/testimonials/testimonials.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 //Loading animation on load
 
 @NgModule({
@@ -47,6 +49,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ContactComponent,
     AddPostComponent,
     ProfileComponent,
+    TestimonialsComponent,
+    NotFoundPageComponent,
   ],
   imports: [
     BrowserModule,

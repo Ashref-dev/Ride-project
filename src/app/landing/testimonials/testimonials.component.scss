@@ -1,0 +1,11 @@
+.text-gradient {
+  background: #4136f1;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #4136f1 0%,
+    #8743ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

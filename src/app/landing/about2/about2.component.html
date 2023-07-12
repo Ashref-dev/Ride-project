@@ -1,30 +1,34 @@
 <div style="height: 2rem; background-color: #eaf2ff"></div>
 <app-one-line-marquee></app-one-line-marquee>
 <div
-  style="background-color: #eaf2ff; padding: 3vh 0"
+  style="background-color: #eaf2ff"
   class="d-flex align-items-center justify-content-center"
 >
   <div
     class="container row my-5 bg-white p-4 justify-content-between rounded-5 border shadow-lg"
   >
-    <div class="col-lg-6 p-3 p-lg-5 d-flex justify-content-between flex-column">
-      <h1 class="display-4 fw-bold lh-1 text-center">
+    <div class="col-lg-7 p-3 p-xl-5 d-flex flex-column justify-content-between">
+      <h1 class="display-5 fw-bold text-center">
         <mark class="text-gradient">Going Home</mark>doesn't have to be hard.
       </h1>
-
-      <p class="lead text-center d-lg-none">
-        Introducing the premiere app for ride sharing in Tunisia.
+      <p class="lead text-center">
+        Subscribe to get latest updates when they release.
       </p>
-      <p
-        class="lead text-center d-none d-lg-block px-5"
-        style="font-size: x-large"
-      >
-        Introducing the premiere app for ride sharing in Tunisia.
-      </p>
-      <button class="gradient-button my-2">Join now</button>
+      <div class="mx-md-5">
+        <input
+          type="email"
+          class="form-control mb-3"
+          id="email"
+          placeholder="email@example.com"
+        />
+        <div class="invalid-feedback">
+          Please enter a valid email address for shipping updates.
+        </div>
+      </div>
+      <button class="gradient-button">Get updates</button>
     </div>
     <img
-      class="rounded-5 rounded-lg-3 col-lg-6 p-0 shadow-lg"
+      class="rounded-5 rounded-lg-3 col-lg-5 p-0 shadow-lg"
       src="https://media.istockphoto.com/id/966294980/photo/chasing-taxi.jpg?s=612x612&w=0&k=20&c=dwCE0DOkdwH7BCIptm4Wdd0KeDyEwqSOoJbY--9p0RY="
       alt="Running man that needs to download RIDE app"
       style="object-fit: cover"
