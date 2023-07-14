@@ -29,7 +29,7 @@
 </header>
 
 <!-- !Desktop header -->
-<!-- buffer  -->
+<!-- ?buffer for color (do not touch)  -->
 <div
   style="
     position: absolute;
@@ -64,7 +64,6 @@
       alt="logo"
     />
   </a>
-
   <ul
     #list
     class="nav mb-2 align-items-center justify-content-between mb-md-0 gap-3 gap-lg-4 gap-xl-5"
@@ -73,33 +72,23 @@
       <a [routerLink]="['/']" class="nav-link px-2 link-dark fs-6">Home</a>
     </li>
     <li>
-      <a [routerLink]="['/postBrowser']" class="nav-link px-2 link-dark fs-6"
-        >Posts</a
-      >
+      <a class="nav-link px-2 link-dark fs-6">Posts</a>
     </li>
     <li>
-      <a [routerLink]="['/profile']" class="nav-link px-2 link-dark fs-6"
-        >Profile</a
-      >
+      <a class="nav-link px-2 link-dark fs-6">Profile</a>
     </li>
     <li>
-      <a [routerLink]="['/contact']" class="nav-link px-2 link-dark fs-6"
-        >Contact</a
-      >
+      <a class="nav-link px-2 link-dark fs-6">Contact</a>
     </li>
   </ul>
   <div class="CTAbuttons">
     <!-- no user logged in -->
     <div *ngIf="currentUser == null" style="justify-self: end">
-      <a
-        [routerLink]="['/login']"
-        class="link-dark pe-3 pe-xl-4 fs-6"
-        style="text-decoration: none"
+      <a class="link-dark pe-3 pe-xl-4 fs-6" style="text-decoration: none"
         >Log in</a
       >
       <button
         type="button"
-        [routerLink]="['/signup']"
         class="gradient-button fs-6"
         style="padding: 0.6em 2vw; border-radius: 14px"
       >
