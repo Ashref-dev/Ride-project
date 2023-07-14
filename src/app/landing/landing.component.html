@@ -15,19 +15,14 @@
   >
     <div class="col-md-6 order-md-2" style="padding-left: 0; padding-right: 0">
       <!-- anim of text behind girl on mobile -->
-      <app-about1></app-about1>
+      <div style="position: absolute; width: 100%">
+        <app-about1></app-about1>
+      </div>
       <!-- ! mobile img of girl -->
-      <!-- TODO: make this responsive to resizes  -->
       <img
         id="girlPhotoMobile"
         class="d-lg-none"
-        style="
-          position: absolute;
-          width: 37vh;
-          top: 12vh;
-          left: 50%;
-          transform: translate(-50%);
-        "
+        style="width: 37vh; margin: 3.4vh 0"
         src="../assets/GirlPhoto.png"
         alt=""
       />
