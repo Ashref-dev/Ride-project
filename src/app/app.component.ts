@@ -1,6 +1,5 @@
 import {
   Component,
-  Inject,
   AfterViewInit,
   ViewChild,
   ElementRef,

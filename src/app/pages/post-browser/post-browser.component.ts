@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GetAllService } from './get-all.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { GetAllService } from './get-all.service';
 export class PostBrowserComponent implements OnInit {
   constructor(private getAllService: GetAllService) {}
 
-  term = '';
+  term: string = '';
 
   postList: any = [];
 

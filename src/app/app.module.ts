@@ -19,14 +19,14 @@ import { FooterComponent } from './footer/footer.component';
 import { OneLineMarqueeComponent } from './landing/one-line-marquee/one-line-marquee.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AddPostComponent } from './pages/add-post/add-post.component';
+import { TestimonialsComponent } from './landing/testimonials/testimonials.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+
 import { ProfileComponent } from './pages/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { TestimonialsComponent } from './landing/testimonials/testimonials.component';
-import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
-//Loading animation on load
 
 @NgModule({
   declarations: [
@@ -41,6 +41,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     ThreeSectionComponent,
     PhysicsSectionComponent,
     StepsSectionComponent,
+    TestimonialsComponent,
     // pages
     PostBrowserComponent,
     LoginComponent,
@@ -49,7 +50,6 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     ContactComponent,
     AddPostComponent,
     ProfileComponent,
-    TestimonialsComponent,
     NotFoundPageComponent,
   ],
   imports: [
