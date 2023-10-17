@@ -26,9 +26,8 @@ or just visit: [ride-project.vercel.app](https://ride-project.vercel.app/)
 
 ## Credits
 
-This project was developed by [M. Ashref Ben Abdallah](https://www.linkedin.com/in/mohamedashrefbna/) in collaboration with Haroun Malek Hammemi & Aerij Ben Salah 
-
-We would like to acknowledge the following resources that were used in the development of this landing page:
+This project was developed by [M. Ashref Ben Abdallah](https://www.linkedin.com/in/mohamedashrefbna/)
+I would like to acknowledge the following resources that were used in the development of this landing page:
 
 - Angular (https://angular.io/)
 - Three.js (https://threejs.org/)
