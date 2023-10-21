@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 export class GetAllService {
   constructor(private http: HttpClient) {}
   getAllPosts() {
-    let data = this.http.get<any>('http://localhost/ridephp/view.php');
+    let data = this.http.get('http://127.0.0.1:8000/getAll',{ responseType: 'text' });
     return data;
   }
 }

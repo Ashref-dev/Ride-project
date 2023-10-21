@@ -25,123 +25,18 @@
       placeholder="Search..."
       [(ngModel)]="term"
     />
-    <!-- ! make the search look pretty -->
+    <!-- ! TODO: make the search look pretty -->
     <!-- <button class="gradient-button my-2" style="justify-self: flex-end">
       Search
     </button> -->
 
     <div
+      [innerHTML]="postsMarkup"
       class="row d-flex align-content-center justify-content-center gap-5 my-5"
-      *ngFor="let post of postList | filter : term"
     >
-      <!-- single card -->
-      <div class="col-12 col-md-12">
-        <div class="card">
-          <div class="card-title align-self-start">
-            <strong style="font-size: 2rem; font-weight: 600"
-              >{{ post.point_depart }} Route</strong
-            >
-            <div class="d-flex align-items-center">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/61/61227.png"
-                class="d-block mx-1"
-                style="width: 15px; height: 15px"
-              />
-              <p class="text-secondary m-0">
-                {{ post.date_cov | date : "long" }}
-              </p>
-            </div>
-          </div>
-          <div class="card-body text-center">
-            <p class="trajectory">
-              {{ post.point_depart }} <------> {{ post.point_arrive }}
-            </p>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-bottom: 0.5rem;
-              "
-            >
-              <p class="m-0">Car model:</p>
+      <!-- *ngFor="let post of postList | filter : term" -->
 
-              <strong class="m-0 mx-2" style="line-height: 0">
-                {{ post.voiture_type }}
-              </strong>
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-bottom: 0.5rem;
-              "
-            >
-              <p class="m-0">Capacity:</p>
-              <div
-                class="mx-3 d-flex align-items-center justify-content-center"
-                style="
-                  width: 2.2rem;
-                  height: 2.2rem;
-                  border-radius: 0.8rem;
-                  background: linear-gradient(
-                    270deg,
-                    rgba(135, 67, 255, 1) 0%,
-                    rgba(65, 54, 241, 1) 100%
-                  );
-                "
-              >
-                <strong class="text-white m-0" style="line-height: 0">
-                  {{ post.capacity }}
-                </strong>
-              </div>
-            </div>
-            <div
-              style="display: flex; flex-direction: row; align-items: center"
-            >
-              <p class="m-0">Baggage:</p>
-              <div
-                class="mx-3 px-2 d-flex align-items-center justify-content-center"
-                style="
-                  height: 2.2rem;
-                  border-radius: 0.8rem;
-                  background: linear-gradient(
-                    270deg,
-                    rgba(135, 67, 255, 1) 0%,
-                    rgba(65, 54, 241, 1) 100%
-                  );
-                "
-              >
-                <strong class="text-white m-0" style="line-height: 0">
-                  {{ post.baggage ? "allowed" : "not allowed" }}
-                </strong>
-              </div>
-            </div>
-          </div>
-          <!-- card footer -->
-          <div class="w-100 d-flex justify-content-between">
-            <div
-              style="display: flex; flex-direction: row; align-items: center"
-            >
-              <img
-                src="../../../assets/person_image (1).jpg"
-                style="width: 2.5rem; border-radius: 100%"
-              />
-              <p class="m-0 mx-3">{{ post.username }}</p>
-            </div>
-            <button class="btn gradient-button" style="margin: 0 0">
-              <img
-                src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png"
-                style="width: 1.5rem; filter: brightness(0) invert(1)"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- modal code -->
-
-      <!-- single card end -->
+      <!-- // ! posts go here  -->
     </div>
   </div>
 </div>

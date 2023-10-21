@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { GetAllService } from './get-all.service';
 
 @Component({
@@ -11,13 +11,12 @@ export class PostBrowserComponent implements OnInit {
 
   term: string = '';
 
-  postList: any = [];
+  postsMarkup: any;
 
   ngOnInit(): void {
     this.getAllService.getAllPosts().subscribe({
       next: (res: any) => {
-        this.postList = res;
-        console.log(this.postList);
+        this.postsMarkup = res;
       },
       error: (err: any) => {
         console.log(err);
