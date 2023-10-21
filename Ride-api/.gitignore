@@ -43,7 +43,7 @@
 bin
 !bin/console
 !bin/symfony_requirements
-/vendor/
+vendor/
 
 # Assets and user uploads
 /web/bundles/
@@ -64,3 +64,12 @@ bin
 
 # Embedded web-server pid file
 /.web-server-pid
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
