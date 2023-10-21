@@ -34,6 +34,7 @@ I would like to acknowledge the following resources that were used in the develo
 - GSAP (https://greensock.com/gsap/)
 - Bootstrap 5 (https://getbootstrap.com/docs/5.0/)
 - Spline (https://spline.design/)
+- Symfony (https://symfony.com/)
 
 ## License
 
