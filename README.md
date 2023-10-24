@@ -36,8 +36,5 @@ I would like to acknowledge the following resources that were used in the develo
 - Spline (https://spline.design/)
 - Symfony (https://symfony.com/)
 
-## License
-
-This project is licensed under the Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License. See the `LICENSE` file for more information.
 
 Make sure to reach out if you encounter any bugs on your device :)
