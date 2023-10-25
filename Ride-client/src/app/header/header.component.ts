@@ -73,7 +73,7 @@ export class HeaderComponent implements OnInit {
     });
   }
   clearAll() {
-    localStorage.clear();
+    localStorage.removeItem('currentUser');
     window.location.reload();
   }
 }

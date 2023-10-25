@@ -5,14 +5,18 @@
 
 	{% for post in posts %}
 
-
-		<!-- single card -->
+		<!-- !single card -->
 		<div class="col-12 col-md-12">
 			<div class="card rounded-4">
 				<div class="card-title align-self-start">
-					<strong class="strong-text lh-1">{{ post.getOriginAddress()|split(',')[0] }}
-						Route</strong>
-					<div class="d-flex align-items-center py-1">
+					<strong class="strong-text lh-1 d-flex flex-row align-items-center ">
+
+						{{"#{post.getOriginAddress()|split(',')[1]} Route"}}
+
+						<span class="badge rounded-pill bg-primary mx-2 mx-lg-3  px-2 fw-medium">
+							{{post.getTripType()}}</span>
+					</strong>
+					<div class="d-flex align-items-center py-1 date-time-combo">
 						<img src="https://cdn-icons-png.flaticon.com/512/61/61227.png" class="d-block mx-1 time-image"/>
 						<p class="text-secondary m-0">{{ post.getDepartureTime() | date }}</p>
 					</div>
@@ -50,7 +54,7 @@
 				<div class="w-100 d-flex justify-content-between">
 					<div class="small-section">
 						<img src="../../../assets/person_image (1).jpg" class="user-image"/>
-						<p class="m-0 mx-3">{{post.getPostAdmin().getFirstName()}}
+						<p class="m-0 mx-2 user-name">{{post.getPostAdmin().getFirstName()}}
 							{{ post.getPostAdmin().getLastName() }}</p>
 					</div>
 					<div class="btn gradient-email-bg rounded-4 px-4">

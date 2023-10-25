@@ -28,22 +28,29 @@ canvas {
 
 // ?Post Browser Symfony Static Code
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .strong-text {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .strong-text > span {
+    font-size: 0.5rem;
+    color: #421b8e !important;
+    background-color: #d9d7ff !important;
   }
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     height: fit-content;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
     box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 0.7rem 1.5rem;
+  }
+  .user-name {
+    font-size: 3.2vw;
+  }
+  .date-time-combo {
+    font-size: 0.8em;
   }
 }
 
@@ -51,6 +58,11 @@ canvas {
   .strong-text {
     font-size: 3rem;
     font-weight: 600;
+  }
+  .strong-text > span {
+    font-size: 0.8vw;
+    color: #421b8e !important;
+    background-color: #d9d7ff !important;
   }
   .card {
     display: flex;
@@ -76,6 +88,7 @@ canvas {
 .time-image {
   width: 15px !important;
   height: 15px !important;
+  opacity: 0.5;
 }
 .small-section {
   display: flex;
