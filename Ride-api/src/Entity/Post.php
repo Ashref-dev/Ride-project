@@ -35,9 +35,10 @@ class Post
     #[ORM\Column]
     private ?bool $baggage_allowed = null;
 
+
     #[ORM\ManyToOne(inversedBy: 'posts')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?User $post_admin = null;
+    private ?User $post_user = null;
 
     public function getId(): ?int
     {
@@ -128,14 +129,14 @@ class Post
         return $this;
     }
 
-    public function getPostAdmin(): ?User
+    public function getPostUser(): ?User
     {
-        return $this->post_admin;
+        return $this->post_user;
     }
 
-    public function setPostAdmin(?User $post_admin): static
+    public function setPostUser(?User $post_user): static
     {
-        $this->post_admin = $post_admin;
+        $this->post_user = $post_user;
 
         return $this;
     }

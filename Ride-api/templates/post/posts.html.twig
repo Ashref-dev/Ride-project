@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
 
 	{% for post in posts %}
 
@@ -13,7 +12,7 @@
 
 						{{"#{post.getOriginAddress()|split(',')[1]} Route"}}
 
-						<span class="badge rounded-pill bg-primary mx-2 mx-lg-3  px-2 fw-medium">
+						<span class="badge rounded-pill bg-primary mx-2 mx-lg-3 px-2 fw-medium text-uppercase">
 							{{post.getTripType()}}</span>
 					</strong>
 					<div class="d-flex align-items-center py-1 date-time-combo">
@@ -54,8 +53,8 @@
 				<div class="w-100 d-flex justify-content-between">
 					<div class="small-section">
 						<img src="../../../assets/person_image (1).jpg" class="user-image"/>
-						<p class="m-0 mx-2 user-name">{{post.getPostAdmin().getFirstName()}}
-							{{ post.getPostAdmin().getLastName() }}</p>
+						<p class="m-0 mx-2 user-name">{{post.getPostUser().getFirstName()}}
+							{{ post.getPostUser().getLastName() }}</p>
 					</div>
 					<div class="btn gradient-email-bg rounded-4 px-4">
 						<img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" class="mail-icon"/>
