@@ -1,6 +1,5 @@
 # RIDE - Landing page for a ride sharing webapp
 
-This repository contains the source code and assets for a landing page developed as an academic project.
 The landing page is built using Angular, Three.js, GSAP, and Bootstrap 5.
 The logo design, UI/UX work (thanks Figma) & development was all done from scratch with no templates, only following a lot of tutorials xD  
 
